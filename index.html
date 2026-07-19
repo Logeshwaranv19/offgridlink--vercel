@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="OffGridLink - The Next-Generation P2P Classroom Experience. Download Teacher and Student applications.">
+    <title>OffGridLink | P2P Classroom Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="background-grid"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i data-lucide="wifi-off"></i>
+                <span>OffGridLink</span>
+            </div>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#tech-stack">Tech Stack</a>
+                <a href="#downloads" class="btn btn-outline">Download</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Empowering Classrooms <span>Anywhere</span>.</h1>
+                    <p class="hero-subtitle">A seamless, peer-to-peer learning platform designed for off-grid
+                        environments. Connect, engage, and learn without boundaries.</p>
+
+                    <div class="hero-actions" id="downloads">
+                        <a href="https://drive.google.com/file/d/1fTvBy8AdLX1GaFifP4yHxZUXb5UMjs8u/view?usp=sharing"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">
+                            <i data-lucide="graduation-cap"></i>
+                            <span>Download Teacher App</span>
+                        </a>
+                        <a href="https://drive.google.com/file/d/1hqo4JZfEK3lfo-CNhW4kK7elxFM-JL0D/view?usp=sharing"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-glow">
+                            <i data-lucide="users"></i>
+                            <span>Download Student App</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Built for the Modern Classroom</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="network"></i></div>
+                        <h3>P2P Connectivity</h3>
+                        <p>Works seamlessly on local Wi-Fi. Dual-broker system with Cloud fallback ensures you're always
+                            connected.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="bar-chart-2"></i></div>
+                        <h3>Dynamic Leaderboards</h3>
+                        <p>Real-time scoring and live student leaderboards keep the classroom competitive and engaged.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="zap"></i></div>
+                        <h3>Lightning Fast</h3>
+                        <p>Optimized desktop and mobile apps built for fast startup and instant data synchronization.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="palette"></i></div>
+                        <h3>Premium UI</h3>
+                        <p>A sleek, high-contrast modern aesthetic designed for focus and minimal distraction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <h3>Teacher Starts the Hub</h3>
+                        <p>The educator launches the Teacher Windows Desktop App. It instantly creates a local classroom
+                            network, acting as the primary host.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <h3>Students Connect via APK</h3>
+                        <p>Students open the Android Mobile App. Using our resilient Dual-Broker system, they discover
+                            the Teacher's hub over Local Wi-Fi or seamlessly fall back to a Cloud Relay.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <h3>Live Quizzes & Leaderboards</h3>
+                        <p>Engage the class with real-time quiz synchronization. Scores update dynamically on the
+                            projector and student devices, fostering a competitive, fun learning environment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="system" class="system-showcase">
+            <div class="container">
+                <h2 class="section-title">The Complete System</h2>
+                <div class="system-split">
+                    <div class="system-box">
+                        <div class="system-icon"><i data-lucide="monitor"></i></div>
+                        <h3>Teacher Desktop App</h3>
+                        <p>A fast, portable Windows executable designed for the modern educator. Built with Electron, it
+                            features a sleek dark mode dashboard, complete control over classroom sessions, and instant
+                            deployment.</p>
+                    </div>
+                    <div class="system-box">
+                        <div class="system-icon"><i data-lucide="smartphone"></i></div>
+                        <h3>Student Mobile App</h3>
+                        <p>A lightweight Android APK customized for mobile accessibility. Features a matching
+                            black-and-white UI, manual connection options for stability, and WebTorrent-powered asset
+                            sharing for heavy media.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-stack" class="tech-stack">
+            <div class="container">
+                <h2 class="section-title">Built with Cutting-Edge Tech</h2>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i data-lucide="cpu"></i>
+                        <h4>Electron & NSIS</h4>
+                        <p>The Teacher dashboard is a robust desktop executable built with Electron and packaged
+                            securely with NSIS for hassle-free Windows installations.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i data-lucide="smartphone"></i>
+                        <h4>Capacitor</h4>
+                        <p>The Student APK is wrapped using Capacitor, delivering a native mobile experience while
+                            keeping the codebase maintainable and fast.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i data-lucide="database"></i>
+                        <h4>CouchDB Syncing</h4>
+                        <p>Persistent and reliable offline-first data synchronization across devices using robust
+                            CouchDB replication.</p>
+                    </div>
+                    <div class="tech-item">
+                        <i data-lucide="share-2"></i>
+                        <h4>PeerJS & WebTorrent</h4>
+                        <p>Direct peer-to-peer communication using PeerJS, combined with WebTorrent for lightning-fast
+                            media and asset sharing without server overload.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-container">
+                <h2>Ready to transform your classroom?</h2>
+                <p>Deploy OffGridLink today and experience seamless, offline-ready education.</p>
+                <a href="#downloads" class="btn btn-primary btn-glow btn-large">Get Started Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 OffGridLink. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i data-lucide="github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
