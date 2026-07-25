@@ -564,6 +564,22 @@ footer {
     max-width: 250px;
 }
 
+/* Demo Videos */
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 32px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.demo-video {
+    width: 100%;
+    display: block;
+}
+
 /* About Section */
 .about-section {
     padding: 120px 0 60px;
