@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="OffGridLink - The Next-Generation P2P Classroom Experience. Download Teacher and Student applications.">
-    <title>OffGridLink | P2P Classroom Platform</title>
+    <meta name="description" content="OffGridLink - The Next-Generation P2P Classroom Experience.">
+    <title>OffGridLink | Empowering Classrooms Anywhere</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
-    <div class="background-grid"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+    <div class="mesh-background">
+        <div class="mesh-blob blob-1"></div>
+        <div class="mesh-blob blob-2"></div>
+        <div class="mesh-blob blob-3"></div>
+        <div class="mesh-glass"></div>
+    </div>
 
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <i data-lucide="wifi-off"></i>
+            <a href="#" class="logo">
+                <div class="logo-icon"><i data-lucide="wifi-off"></i></div>
                 <span>OffGridLink</span>
-            </div>
+            </a>
             <nav>
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
-                <a href="#tech-stack">Tech Stack</a>
-                <a href="#downloads" class="btn btn-outline">Download</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#downloads" class="btn btn-primary btn-sm shadow-hover">Download App</a>
             </nav>
         </div>
     </header>
@@ -35,262 +35,207 @@
     <main>
         <section class="hero">
             <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Empowering Classrooms <span>Anywhere</span>.</h1>
-                    <p class="hero-subtitle">A seamless, peer-to-peer learning platform designed for off-grid
-                        environments. Connect, engage, and learn without boundaries.</p>
-
-                    <div class="hero-actions" id="downloads">
-                        <a href="https://drive.google.com/file/d/1z0pCI7QYfs6NAIxnbXd86of9KjzOOSAi/view?usp=sharing"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">
-                            <i data-lucide="graduation-cap"></i>
-                            <span>Download Teacher App</span>
-                        </a>
-                        <a href="https://drive.google.com/file/d/1cxWz23IGN4jh5u50krlarQN2Etv6iXFQ/view?usp=sharing"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-glow">
-                            <i data-lucide="users"></i>
-                            <span>Download Student App</span>
-                        </a>
-                    </div>
+                <div class="hero-badge">
+                    <span class="badge-icon"><i data-lucide="sparkles"></i></span>
+                    <span class="badge-text">Discover OffGridLink 2.0</span>
+                </div>
+                <h1 class="hero-title">Empowering Classrooms<br><span class="gradient-text">Anywhere.</span></h1>
+                <p class="hero-subtitle">A seamless, peer-to-peer learning platform designed for off-grid environments. Connect, engage, and learn without boundaries.</p>
+                <div class="hero-actions" id="downloads">
+                    <a href="https://drive.google.com/file/d/1z0pCI7QYfs6NAIxnbXd86of9KjzOOSAi/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg shadow-hover">
+                        <i data-lucide="monitor"></i> Teacher Desktop
+                    </a>
+                    <a href="https://drive.google.com/file/d/1cxWz23IGN4jh5u50krlarQN2Etv6iXFQ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-lg shadow-hover">
+                        <i data-lucide="smartphone"></i> Student Mobile
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="what-is-it" class="simple-explanation">
+        <!-- What is it -->
+        <section id="what-is-it">
             <div class="container">
-                <div class="simple-card">
+                <div class="glass-panel text-center">
                     <h2 class="section-title">What exactly is OffGridLink?</h2>
-                    <p class="simple-subtitle">A simple explanation for anyone—no tech skills required.</p>
+                    <p class="section-subtitle">A simple explanation for anyone—no tech skills required.</p>
                     
-                    <div class="simple-steps">
-                        <div class="s-step">
-                            <div class="s-icon"><i data-lucide="wifi-off"></i></div>
-                            <h4>1. No Internet? No Problem.</h4>
+                    <div class="steps-grid simple">
+                        <div class="step-card">
+                            <div class="icon-wrapper bg-pink"><i data-lucide="wifi-off"></i></div>
+                            <h4>No Internet? No Problem.</h4>
                             <p>Imagine a school in a remote village with absolutely zero internet connection. Normally, digital learning would be impossible here.</p>
                         </div>
-                        <div class="s-step">
-                            <div class="s-icon"><i data-lucide="laptop"></i></div>
-                            <h4>2. The Teacher's Laptop</h4>
-                            <p>The teacher opens the OffGridLink app on their laptop. It instantly creates an invisible, local "Wi-Fi bubble" that covers the entire classroom.</p>
+                        <div class="step-card">
+                            <div class="icon-wrapper bg-blue"><i data-lucide="laptop"></i></div>
+                            <h4>The Teacher's Laptop</h4>
+                            <p>The teacher opens the OffGridLink app on their laptop. It instantly creates an invisible, local "Wi-Fi bubble" covering the classroom.</p>
                         </div>
-                        <div class="s-step">
-                            <div class="s-icon"><i data-lucide="smartphone"></i></div>
-                            <h4>3. Students Connect</h4>
-                            <p>Students take out their mobile phones and connect directly to the teacher's bubble. They don't need any cellular data or internet connection at all.</p>
+                        <div class="step-card">
+                            <div class="icon-wrapper bg-purple"><i data-lucide="smartphone"></i></div>
+                            <h4>Students Connect</h4>
+                            <p>Students take out their mobile phones and connect directly to the teacher's bubble. No cellular data or internet needed.</p>
                         </div>
-                        <div class="s-step">
-                            <div class="s-icon"><i data-lucide="check-circle-2"></i></div>
-                            <h4>4. The Magic Happens</h4>
-                            <p>Now, the teacher can beam live quizzes to every student's phone instantly. When students answer, the teacher sees their scores live. It's a full digital classroom, completely off the grid!</p>
+                        <div class="step-card">
+                            <div class="icon-wrapper bg-green"><i data-lucide="check-circle-2"></i></div>
+                            <h4>The Magic Happens</h4>
+                            <p>The teacher can beam live quizzes to every student's phone instantly. When students answer, scores update live. A full offline digital classroom!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
+        <!-- About Split -->
+        <section id="about">
             <div class="container">
-                <div class="about-grid">
-                    <div class="about-content">
+                <div class="split-section">
+                    <div class="split-content">
                         <h2 class="section-title text-left">Education Beyond Borders</h2>
-                        <p class="about-text">
-                            Millions of students worldwide lack reliable access to the internet. <strong>OffGridLink</strong> was built to bridge this digital divide by transforming any classroom into a high-speed, interactive digital learning environment—<strong>completely offline</strong>.
-                        </p>
-                        <p class="about-text">
-                            Whether you are in a remote rural village, a disaster recovery zone, or simply facing a network outage, our platform ensures education never stops. The teacher's laptop becomes the heart of the classroom, broadcasting quizzes, sharing heavy media, and syncing progress seamlessly to student devices.
-                        </p>
-                        
+                        <p>Millions of students worldwide lack reliable access to the internet. <strong>OffGridLink</strong> was built to bridge this digital divide by transforming any classroom into a high-speed, interactive digital learning environment—<strong>completely offline</strong>.</p>
+                        <p>Whether you are in a remote rural village, a disaster recovery zone, or simply facing a network outage, our platform ensures education never stops.</p>
                     </div>
-                    <div class="about-image">
-                        <img src="images/classroom-banner.png" alt="Remote Classroom Learning" class="styled-image">
+                    <div class="split-visual float-animation">
+                        <img src="images/classroom-banner.png" alt="Remote Classroom" class="styled-img">
                     </div>
                 </div>
 
-                <div class="about-grid reverse-grid" style="margin-top: 6rem;">
-                    <div class="about-image">
-                        <img src="images/p2p-network.png" alt="P2P Network Architecture" class="styled-image">
-                    </div>
-                    <div class="about-content">
+                <div class="split-section reverse mt-xl">
+                    <div class="split-content">
                         <h2 class="section-title text-left">True Peer-to-Peer Architecture</h2>
-                        <p class="about-text">
-                            Our proprietary dual-broker system leverages the power of Local Wi-Fi and WebTorrent. Students connect directly to the teacher's hub, forming a resilient mesh network that requires zero external servers.
-                        </p>
-                        <p class="about-text">
-                            If the local network fails, our intelligent Cloud Relay fallback kicks in instantly to keep the session alive. This hybrid approach guarantees unprecedented stability and speed, letting educators focus entirely on teaching.
-                        </p>
+                        <p>Our proprietary dual-broker system leverages the power of Local Wi-Fi and WebTorrent. Students connect directly to the teacher's hub, forming a resilient mesh network that requires zero external servers.</p>
+                        <p>If the local network fails, our intelligent Cloud Relay fallback kicks in instantly to keep the session alive. This hybrid approach guarantees unprecedented stability and speed.</p>
+                    </div>
+                    <div class="split-visual float-animation-delayed">
+                        <img src="images/p2p-network.png" alt="P2P Architecture" class="styled-img">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features">
+        <!-- Features Bento -->
+        <section id="features">
             <div class="container">
-                <h2 class="section-title">Built for the Modern Classroom</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i data-lucide="network"></i></div>
+                <div class="section-header">
+                    <h2 class="section-title">Built for the Modern Classroom</h2>
+                    <p class="section-subtitle">Powerful features designed to keep students engaged offline.</p>
+                </div>
+                <div class="bento-grid">
+                    <div class="bento-item glass-panel wide feature-hover">
+                        <div class="icon-wrapper bg-orange"><i data-lucide="network"></i></div>
                         <h3>P2P Connectivity</h3>
-                        <p>Works seamlessly on local Wi-Fi. Dual-broker system with Cloud fallback ensures you're always
-                            connected.</p>
+                        <p>Works seamlessly on local Wi-Fi. Dual-broker system with Cloud fallback ensures you're always connected, no matter the environment.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i data-lucide="bar-chart-2"></i></div>
+                    <div class="bento-item glass-panel feature-hover">
+                        <div class="icon-wrapper bg-blue"><i data-lucide="bar-chart-2"></i></div>
                         <h3>Dynamic Leaderboards</h3>
-                        <p>Real-time scoring and live student leaderboards keep the classroom competitive and engaged.
-                        </p>
+                        <p>Real-time scoring and live student leaderboards keep the classroom competitive and engaged.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i data-lucide="zap"></i></div>
+                    <div class="bento-item glass-panel feature-hover">
+                        <div class="icon-wrapper bg-green"><i data-lucide="zap"></i></div>
                         <h3>Lightning Fast</h3>
-                        <p>Optimized desktop and mobile apps built for fast startup and instant data synchronization.
-                        </p>
+                        <p>Optimized desktop and mobile apps built for fast startup and instant data synchronization.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i data-lucide="palette"></i></div>
+                    <div class="bento-item glass-panel wide-bottom feature-hover">
+                        <div class="icon-wrapper bg-purple"><i data-lucide="palette"></i></div>
                         <h3>Premium UI</h3>
-                        <p>A sleek, high-contrast modern aesthetic designed for focus and minimal distraction.</p>
+                        <p>A sleek, vibrant modern aesthetic designed for maximum engagement and delight. Featuring responsive layouts and smooth micro-animations.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="how-it-works" class="how-it-works">
+        <!-- Gallery -->
+        <section id="gallery">
             <div class="container">
-                <h2 class="section-title">How It Works</h2>
-                <div class="steps-grid">
-                    <div class="step-card">
-                        <div class="step-number">01</div>
-                        <h3>Teacher Starts the Hub</h3>
-                        <p>The educator launches the Teacher Windows Desktop App. It instantly creates a local classroom
-                            network, acting as the primary host.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">02</div>
-                        <h3>Students Connect via APK</h3>
-                        <p>Students open the Android Mobile App. Using our resilient Dual-Broker system, they discover
-                            the Teacher's hub over Local Wi-Fi or seamlessly fall back to a Cloud Relay.</p>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-number">03</div>
-                        <h3>Live Quizzes & Leaderboards</h3>
-                        <p>Engage the class with real-time quiz synchronization. Scores update dynamically on the
-                            projector and student devices, fostering a competitive, fun learning environment.</p>
-                    </div>
+                <div class="section-header">
+                    <h2 class="section-title">App Gallery</h2>
+                    <p class="section-subtitle">Experience the seamless interface of OffGridLink.</p>
                 </div>
-            </div>
-        </section>
 
-
-        <section id="system" class="system-showcase">
-            <div class="container">
-                <h2 class="section-title">The Complete System</h2>
-                <div class="system-split">
-                    <div class="system-box">
-                        <div class="system-icon"><i data-lucide="monitor"></i></div>
+                <div class="gallery-group glass-panel">
+                    <div class="gallery-header">
+                        <div class="icon-wrapper bg-blue"><i data-lucide="monitor"></i></div>
                         <h3>Teacher Desktop App</h3>
-                        <p>A fast, portable Windows executable designed for the modern educator. Built with Electron, it
-                            features a sleek dark mode dashboard, complete control over classroom sessions, and instant
-                            deployment.</p>
-                        <img src="images/teacher-app.png" alt="Teacher Desktop App Screenshot" class="app-screenshot">
                     </div>
-                    <div class="system-box">
-                        <div class="system-icon"><i data-lucide="smartphone"></i></div>
+                    <div class="browser-window">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="browser-url">teacher.offgridlink.app</div>
+                        </div>
+                        <div class="browser-body">
+                            <iframe src="https://drive.google.com/file/d/1yaIWArO0C1ukhdcEji_MuaA8gFHj59_j/preview" class="demo-video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="screenshot-grid desktop">
+                        <img src="images/teacher-1.png" alt="Teacher App 1">
+                        <img src="images/teacher-2.png" alt="Teacher App 2">
+                        <img src="images/teacher-3.png" alt="Teacher App 3">
+                        <img src="images/teacher-4.png" alt="Teacher App 4">
+                        <img src="images/teacher-5.png" alt="Teacher App 5">
+                    </div>
+                </div>
+
+                <div class="gallery-group glass-panel mt-xl">
+                    <div class="gallery-header">
+                        <div class="icon-wrapper bg-pink"><i data-lucide="smartphone"></i></div>
                         <h3>Student Mobile App</h3>
-                        <p>A lightweight Android APK customized for mobile accessibility. Features a matching
-                            black-and-white UI, manual connection options for stability, and WebTorrent-powered asset
-                            sharing for heavy media.</p>
-                        <img src="images/student-app.jpg" alt="Student Mobile App Screenshot" class="app-screenshot">
+                    </div>
+                    <div class="mobile-device-wrapper">
+                        <div class="mobile-frame">
+                            <div class="notch"></div>
+                            <iframe src="https://drive.google.com/file/d/1IQdV5k-L94bQ2268o1uJKwz2_4S0eCUv/preview" class="demo-video mobile-video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="screenshot-grid mobile mt-xl">
+                        <img src="images/student-1.jpeg" alt="Student App 1">
+                        <img src="images/student-2.jpeg" alt="Student App 2">
+                        <img src="images/student-3.jpeg" alt="Student App 3">
+                        <img src="images/student-4.jpeg" alt="Student App 4">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="gallery" class="gallery-showcase">
-            <div class="container">
-                <h2 class="section-title">App Gallery</h2>
-                
-                <div class="gallery-group">
-                    <h3 class="gallery-subtitle">Teacher Desktop App</h3>
-                    <div class="video-container">
-                        <iframe src="https://drive.google.com/file/d/1yaIWArO0C1ukhdcEji_MuaA8gFHj59_j/preview" width="100%" height="450" class="demo-video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-grid teacher-grid">
-                        <img src="images/teacher-1.png" alt="Teacher App Screenshot 1" class="gallery-img">
-                        <img src="images/teacher-2.png" alt="Teacher App Screenshot 2" class="gallery-img">
-                        <img src="images/teacher-3.png" alt="Teacher App Screenshot 3" class="gallery-img">
-                        <img src="images/teacher-4.png" alt="Teacher App Screenshot 4" class="gallery-img">
-                        <img src="images/teacher-5.png" alt="Teacher App Screenshot 5" class="gallery-img">
-                    </div>
-                </div>
-
-                <div class="gallery-group" style="margin-top: 4rem;">
-                    <h3 class="gallery-subtitle">Student Mobile App</h3>
-                    <div class="video-container">
-                        <iframe src="https://drive.google.com/file/d/1IQdV5k-L94bQ2268o1uJKwz2_4S0eCUv/preview" width="100%" height="450" class="demo-video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-grid student-grid">
-                        <img src="images/student-1.jpeg" alt="Student App Screenshot 1" class="gallery-img student-img">
-                        <img src="images/student-2.jpeg" alt="Student App Screenshot 2" class="gallery-img student-img">
-                        <img src="images/student-3.jpeg" alt="Student App Screenshot 3" class="gallery-img student-img">
-                        <img src="images/student-4.jpeg" alt="Student App Screenshot 4" class="gallery-img student-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tech-stack" class="tech-stack">
-            <div class="container">
-                <h2 class="section-title">Built with Cutting-Edge Tech</h2>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <i data-lucide="cpu"></i>
-                        <h4>Electron & NSIS</h4>
-                        <p>The Teacher dashboard is a robust desktop executable built with Electron and packaged
-                            securely with NSIS for hassle-free Windows installations.</p>
-                    </div>
-                    <div class="tech-item">
-                        <i data-lucide="smartphone"></i>
-                        <h4>Capacitor</h4>
-                        <p>The Student APK is wrapped using Capacitor, delivering a native mobile experience while
-                            keeping the codebase maintainable and fast.</p>
-                    </div>
-                    <div class="tech-item">
-                        <i data-lucide="database"></i>
-                        <h4>CouchDB Syncing</h4>
-                        <p>Persistent and reliable offline-first data synchronization across devices using robust
-                            CouchDB replication.</p>
-                    </div>
-                    <div class="tech-item">
-                        <i data-lucide="share-2"></i>
-                        <h4>PeerJS & WebTorrent</h4>
-                        <p>Direct peer-to-peer communication using PeerJS, combined with WebTorrent for lightning-fast
-                            media and asset sharing without server overload.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- CTA -->
         <section class="cta-section">
-            <div class="container cta-container">
-                <h2>Ready to transform your classroom?</h2>
-                <p>Deploy OffGridLink today and experience seamless, offline-ready education.</p>
-                <a href="#downloads" class="btn btn-primary btn-glow btn-large">Get Started Now</a>
+            <div class="container">
+                <div class="cta-box glass-panel text-center">
+                    <h2 class="section-title">Ready to transform your classroom?</h2>
+                    <p class="section-subtitle">Deploy OffGridLink today and experience seamless, offline-ready education.</p>
+                    <a href="#downloads" class="btn btn-primary btn-lg shadow-hover mt-md">
+                        Get Started Now <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container footer-container">
+            <div class="footer-logo">
+                <i data-lucide="wifi-off"></i> OffGridLink
+            </div>
             <p>&copy; 2026 OffGridLink. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i data-lucide="github"></i></a>
+            <div class="socials">
+                <a href="#" class="icon-wrapper small"><i data-lucide="github"></i></a>
+                <a href="#" class="icon-wrapper small"><i data-lucide="twitter"></i></a>
             </div>
         </div>
     </footer>
 
     <script>
         lucide.createIcons();
+        
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
-
 </html>
